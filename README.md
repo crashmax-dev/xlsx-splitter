@@ -2,10 +2,14 @@
 
 > Splits an XLSX file into multiple XLSX files.
 
-## Usage
-
+## Install
 ```bash
-pnpx @crashmax/xlsx-splitter --file document.xlsx --rows 1000
+pnpm i -g @crashmax/xlsx-splitter
+```
+
+## Usage
+```bash
+xlsx-splitter --file document.xlsx --rows 1000
 ```
 
 ## Arguments

@@ -1,6 +1,6 @@
 # @crashmax/xlsx-splitter
 
-<a href="https://www.npmjs.com/package/xlsx-splitter">
+<a href="https://www.npmjs.com/package/@crashmax/xlsx-splitter">
   <img alt="npm" src="https://img.shields.io/npm/v/@crashmax/xlsx-splitter?color=orange">
 </a>
 

@@ -2,7 +2,7 @@ name: Build assets for release
 
 on:
   release:
-    types: [created, published]
+    types: [created]
 
 jobs:
   releases-matrix:

@@ -1,2 +1,7 @@
 *.xlsx
 *.bin
+*.exe
+*.upx
+xlsx-splitter
+node_modules
+pnpm-lock.yaml

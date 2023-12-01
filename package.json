@@ -1,0 +1,20 @@
+{
+  "name": "@crashmax/xlsx-splitter",
+  "description": "Splits an XLSX file into multiple XLSX files.",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "CGO_ENABLED=0 go build -ldflags=\"-s -w\" -o ./xlsx-splitter ./cmd && pnpm run upx",
+    "upx": "upx -9 ./xlsx-splitter",
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "dependencies": {
+    "@go-task/go-npm": "0.1.18"
+  },
+  "goBinary": {
+    "name": "xlsx-splitter",
+    "path": "./bin",
+    "url": "https://github.com/crashmax-dev/xlsx-splitter/releases/download/v{{version}}/xlsx-splitter-{{platform}}_{{arch}}"
+  }
+}

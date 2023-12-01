@@ -1,7 +1,7 @@
 {
   "name": "@crashmax/xlsx-splitter",
   "description": "Splits an XLSX file into multiple XLSX files.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "files": [],
   "repository": {

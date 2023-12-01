@@ -3,7 +3,7 @@ name: Build assets for release
 on:
   release:
     types:
-      - published
+      - released
 
 jobs:
   releases-matrix:

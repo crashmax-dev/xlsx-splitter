@@ -1,7 +1,7 @@
 {
   "name": "@crashmax/xlsx-splitter",
   "description": "Splits an XLSX file into multiple XLSX files.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "CGO_ENABLED=0 go build -ldflags=\"-s -w\" -o ./xlsx-splitter ./cmd && pnpm run upx",

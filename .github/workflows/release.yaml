@@ -3,11 +3,12 @@ name: Release
 on:
   push:
     tags:
-      - '*'
+      - 'v*'
 
   workflow_dispatch:
     inputs:
       ref:
+        description: Reference
         required: true
 
 jobs:

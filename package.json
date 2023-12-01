@@ -31,6 +31,6 @@
   "goBinary": {
     "name": "xlsx-splitter",
     "path": "./bin",
-    "url": "https://github.com/crashmax-dev/xlsx-splitter/releases/download/v{{version}}/xlsx-splitter-{{platform}}_{{arch}}"
+    "url": "https://github.com/crashmax-dev/xlsx-splitter/releases/download/v{{version}}/xlsx-splitter-{{platform}}_{{arch}}{{archive_ext}}"
   }
 }

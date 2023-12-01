@@ -3,6 +3,22 @@
   "description": "Splits an XLSX file into multiple XLSX files.",
   "version": "0.0.1",
   "type": "module",
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crashmax-dev/xlsx-splitter.git"
+  },
+  "keywords": [
+    "xlsx",
+    "splitter",
+    "cli",
+    "tools"
+  ],
+  "author": "Vitalij Ryndin <crashmax.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crashmax-dev/xlsx-splitter/issues"
+  },
   "scripts": {
     "build": "CGO_ENABLED=0 go build -ldflags=\"-s -w\" -o ./xlsx-splitter ./cmd && pnpm run upx",
     "upx": "upx -9 ./xlsx-splitter",

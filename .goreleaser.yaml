@@ -1,6 +1,6 @@
 builds:
   - binary: xlsx-splitter
-    main: ./cmd/main
+    main: ./cmd/main.go
     goos:
       - windows
       - darwin

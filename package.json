@@ -3,6 +3,7 @@
   "description": "Splits an XLSX file into multiple XLSX files.",
   "version": "0.0.5",
   "type": "module",
+  "bin": "node_modules/.bin/xlsx-splitter",
   "files": [],
   "repository": {
     "type": "git",

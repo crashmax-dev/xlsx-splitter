@@ -1,28 +1,20 @@
 {
-  "name": "@r3-dev/xlsx-splitter",
-  "version": "0.2.1",
+  "name": "@crashmax/xlsx-splitter",
+  "description": "Splits an XLSX file into multiple XLSX files.",
+  "version": "0.0.0",
   "type": "module",
-  "bin": {
-    "xlsx-splitter": "./dist/bin.js"
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "tsx watch src/bin.ts",
-    "build": "tsc",
-    "format": "prettier --write \"**/*.{js,ts,tsx,json}\""
+    "build": "CGO_ENABLED=0 go build -ldflags=\"-s -w\" -o ./xlsx-splitter ./cmd && pnpm run upx",
+    "upx": "upx -9 ./xlsx-splitter",
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
   },
   "dependencies": {
-    "node-xlsx": "^0.23.0",
-    "yargs": "^17.7.2"
+    "@go-task/go-npm": "0.1.18"
   },
-  "devDependencies": {
-    "@crashmax/prettier-config": "^5.0.1",
-    "@crashmax/tsconfig": "^2.1.0",
-    "@types/node": "^20.10.0",
-    "@types/yargs": "^17.0.32",
-    "tsx": "^4.5.0",
-    "typescript": "^5.3.2"
+  "goBinary": {
+    "name": "xlsx-splitter",
+    "path": "./bin",
+    "url": "https://github.com/crashmax-dev/xlsx-splitter/releases/download/v{{version}}/xlsx-splitter-{{platform}}_{{arch}}"
   }
 }
